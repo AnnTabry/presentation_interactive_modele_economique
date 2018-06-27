@@ -1,0 +1,47 @@
+#container {
+  height: 800px;
+  width: 1200px;
+  margin: auto;
+
+}
+
+.titre {
+  padding-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #0984e3;
+  font-weight: bold;
+}
+
+.titre > p {
+  background-color: white;
+  color: #0984e3;
+
+}
+
+.blue {
+  background-color: #0984e3;
+}
+
+
+
+
+
+#button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.blue2 {
+  width: 50px;
+  height: 50px;
+  background-color: #0984e3;
+
+}
+
+#button>p {
+  color: #0984e3;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+

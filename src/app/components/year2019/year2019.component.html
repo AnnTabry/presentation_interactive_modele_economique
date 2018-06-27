@@ -1,0 +1,127 @@
+<div class="item3"><h1>ARCHITECTURE – 2019 Model</h1><br><p>Red Line : <br>Incorporate the next generation actual business drivers.<br>Integrate the Portfolio IPPM to prepare the 2020 Integration</p></div>
+<div class="grid-container">
+
+
+  <img src="assets\img\Accolade.png" id="acc">
+
+  <!--<div *ngIf="colors.red" class="redDiv"></div>-->
+
+  <!--<div *ngIf="colors.yellow" class="yellowDiv"></div>-->
+
+  <div class="item1 bigdiv">
+    <h3>BW</h3>
+    <p class="bpc">BPC10</p>
+    <p id="blue">IPPM</p><p>Projects<br><br>Supply Products / App</p>
+  </div>
+
+
+  <img src="assets\img\cube.png" id="cube" routerLink="/matrix1" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')">
+  <p id="metrics">Transaction Metrics</p>
+
+
+  <div class="item2 bigdiv">
+    <h3>BW</h3>
+    <p class="bpc">BPC10</p>
+    <p id="blue">Capacity Planning</p><p>Legal entity<br><br>Cost centers / Internal<br><br>Orders</p>
+  </div>
+
+
+
+
+
+  <!--<div *ngIf="colors.grey" class="grayDiv"></div>-->
+
+  <div class="item4 bigdiv">
+  </div>
+
+  <h5 id="ecc">ECC</h5>
+  <div class="item5 bigdiv">
+    <p>CO<br>Allocations - all except Supply Manpower Supply</p>
+  </div>
+
+
+  <div class="item6 bigdiv">
+    <p>FI</p>
+  </div>
+
+  <div *ngIf="colors.red" routerLink="/apptio" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')" class="itemrouge bigdiv">
+    <p>APPTIO<br>Allocation Sub-Ledger for Supply Chain</p>
+  </div>
+
+  <h2 id="top">IT LANDSCAPE</h2>
+  <h2 id="left">Manpower +<br>Non-Manpower Costs</h2>
+
+  <app-arrow   [hidden]="!colors.green" id="greenCanvas2"
+               [lines]="[createPoint(1, 40), createPoint(190, 40)]"
+               [color]="'#6ab04c'"
+               [direction]="'right'"
+  ></app-arrow>
+
+
+  <app-arrow [hidden]="!colors.red" id="redCanvas"
+             [lines]="[createPoint(10, 1), createPoint(10, 120)]"
+             [color]="'#B53471'"
+             [direction]="'down'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.red" id="redCanvas2"
+             [lines]="[createPoint(10, 1), createPoint(10, 120)]"
+             [color]="'#B53471'"
+             [direction]="'down'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.yellow" id="yellowCanvas"
+             [lines]="[createPoint(10, 120 ), createPoint(10, 15)]"
+             [color]="'yellow'"
+             [direction]="'up'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.yellow" id="yellowCanvas2"
+             [lines]="[createPoint(10, 120), createPoint(10, 15)]"
+             [color]="'yellow'"
+             [direction]="'up'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.yellow" id="yellowCanvas3"
+             [lines]="[createPoint(10, 80), createPoint(10, 120)]"
+             [color]="'yellow'"
+             [direction]="'down'"
+  ></app-arrow>
+
+  <app-arrow   [hidden]="!colors.grey" id="grayCanvas"
+               [lines]="[createPoint(20, 60), createPoint(20, 20)]"
+               [color]="'grey'"
+               [direction]="'up'"
+  ></app-arrow>
+
+  <app-arrow   [hidden]="!colors.green" id="greenCanvas3"
+               [lines]="[createPoint(20, 60), createPoint(20, 20)]"
+               [color]="'#6ab04c'"
+               [direction]="'up'"
+  ></app-arrow>
+
+
+  <!--<div *ngIf="colors.green" class="greenDiv"></div>-->
+
+
+
+  <!--<canvas [hidden]="!colors.red" #arrow id="redCanvas"></canvas>-->
+
+  <!--<app-arrow [hidden]="!colors.green" id="greenCanvas"-->
+             <!--[lines]="greenLines"-->
+             <!--[color]="'green'"-->
+  <!--&gt;</app-arrow>-->
+
+  <!--<app-arrow [hidden]="!colors.green" id="blueCanvas"-->
+             <!--[lines]="[createLine(10, 10, 50, 50), createLine(10, 90, 108, 10)]"-->
+             <!--[color]="'green'"-->
+  <!--&gt;</app-arrow>-->
+
+  <!--<app-arrow [hidden]="!colors.red" id="redCanvas2"-->
+             <!--[lines]="redLines"-->
+             <!--[color]="'red'"-->
+  <!--&gt;</app-arrow>-->
+
+
+</div>
+

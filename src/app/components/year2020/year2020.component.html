@@ -1,0 +1,119 @@
+<div class="item3">
+  <h1>ARCHITECTURE – 2020 Model</h1>
+  <p>Red Lines :
+    <br>Move allocation Metrics beyond traditional capacity budgeting, to next generation actual business drivers.
+    <br>Incorporate in the Target GFT 2020 Architecture.
+    <br>One Source of Data.
+  </p>
+</div>
+<div class="grid-container">
+  <img src="assets\img\Accolade.png" id="acc">
+  <div id="content">
+    <h3>BW</h3>
+    <p class="bpc" routerLink="/bpc11" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')">BPC11</p>
+    <div id="item1">
+      <header>
+        <p class="blue left">Corporate IPPM</p>
+      </header>
+      <p>Projects
+        <br>
+        <br>Supply Products / App</p>
+    </div>
+    <div id="item2">
+      <header>
+        <p class="blue right">Capacity Planning</p>
+      </header>
+      <p>Legal entity
+        <br>
+        <br>Cost centers / Internal
+        <br>
+        <br>Orders</p>
+    </div>
+  </div>
+
+
+  <img src="assets\img\cube.png" routerLink="/matrix1"  id="cube" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')">
+  <p id="metrics">Transaction Metrics</p>
+
+  <div class="item4 bigdiv">
+  </div>
+  <h5 id="hana">S/4HANA</h5>
+  <div class="item5 bigdiv">
+    <p>CO
+      <br>Allocations - all except Supply Manpower Supply</p>
+  </div>
+  <div class="item6 bigdiv">
+    <p>FI</p>
+  </div>
+  <div *ngIf="colors.red"   class="itemrouge bigdiv">
+    <p>APPTIO
+      <br>Allocation Sub-Ledger for Supply Chain</p>
+  </div>
+  <div *ngIf="colors.green" class="itemvert bigdiv">
+    <p>Commercial Business Units
+      <br>(ACU, TCH, SGB)
+    </p>
+  </div>
+  <h2 id="top">HANA (AMADEUS CLOUD)</h2>
+  <h2 id="left">Manpower +<br>Non-Manpower Costs</h2>
+
+  <app-arrow   [hidden]="!colors.green" id="greenCanvas2"
+               [lines]="[createPoint(1, 40), createPoint(190, 40)]"
+               [color]="'#6ab04c'"
+               [direction]="'right'"
+  ></app-arrow>
+
+
+  <app-arrow [hidden]="!colors.red" id="redCanvas"
+             [lines]="[createPoint(10, 1), createPoint(10, 80)]"
+             [color]="'#B53471'"
+             [direction]="'down'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.red" id="redCanvas2"
+             [lines]="[createPoint(10, 45), createPoint(10, 85)]"
+             [color]="'#B53471'"
+             [direction]="'down'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.yellow" id="yellowCanvas"
+             [lines]="[createPoint(10, 85 ), createPoint(10, 15)]"
+             [color]="'yellow'"
+             [direction]="'up'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.yellow" id="yellowCanvas2"
+             [lines]="[createPoint(10, 105), createPoint(10, 60)]"
+             [color]="'yellow'"
+             [direction]="'up'"
+  ></app-arrow>
+  <app-arrow [hidden]="!colors.yellow" id="yellowCanvas3"
+             [lines]="[createPoint(10, 93), createPoint(10, 60)]"
+             [color]="'yellow'"
+             [direction]="'up'"
+  ></app-arrow>
+
+
+  <app-arrow [hidden]="!colors.red" id="redCanvas3"
+             [lines]="[createPoint(10, 80), createPoint(10, 120)]"
+             [color]="'#B53431'"
+             [direction]="'down'"
+  ></app-arrow>
+
+  <app-arrow   [hidden]="!colors.green" id="greenCanvas3"
+               [lines]="[createPoint(20, 60), createPoint(20, 20)]"
+               [color]="'#6ab04c'"
+               [direction]="'up'"
+  ></app-arrow>
+  <app-arrow   [hidden]="!colors.green" id="greenCanvas4"
+               [lines]="[createPoint(20, 20), createPoint(40, 20)]"
+               [color]="'#6ab04c'"
+               [direction]="'right'"
+  ></app-arrow>
+  <app-arrow
+    [hidden]="!colors.green" id="greenCanvas5"
+    [lines]="[createPoint(40, 20), createPoint(20, 20)]"
+    [color]="'#6ab04c'"
+    [direction]="'left'"
+  ></app-arrow>
+</div>

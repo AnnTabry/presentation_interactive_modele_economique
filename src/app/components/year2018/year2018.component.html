@@ -1,0 +1,89 @@
+<div class="item3"><h1>ARCHITECTURE – Actual Model</h1><br><p>The TPE cost model will cover the all manpower and non-manpower costs across the TPE portfolio, including supply chain, project factory and overheads, <br>and describes the allocation of these costs towards BUs and internal portfolio.</p></div>
+<div class="grid-container">
+
+
+  <img src="assets\img\Accolade.png" id="acc">
+
+  <div class="item1 bigdiv">
+    <h3>BW</h3>
+    <p class="bpc">BPC10</p>
+    <p class="blue">IPPM</p><p>Projects<br><br>Generic TPE line</p>
+  </div>
+
+
+  <img src="assets\img\cube.png" id="cube" routerLink="/matrix1" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')">
+  <p id="metrics">Transaction Metrics</p>
+
+
+  <div class="item2 bigdiv">
+    <h3>BW</h3>
+    <p class="bpc">BPC10</p>
+    <p class="blue">Capacity Planning</p><p>Legal entity<br><br>Cost centers / Internal<br><br>Orders</p>
+  </div>
+
+  <div class="item4 bigdiv">
+  </div>
+
+  <h5 id="ecc">ECC</h5>
+  <div class="item5 bigdiv">
+    <p>CO<br>Allocations - all except Supply Manpower Supply</p>
+  </div>
+
+
+  <div class="item6 bigdiv">
+    <p>FI</p>
+  </div>
+
+  <div *ngIf="colors.red" class="itemrouge bigdiv">
+    <p>APPTIO<br>Allocation Sub-Ledger for Supply Chain</p>
+  </div>
+
+  <h2 id="top">IT LANDSCAPE</h2>
+  <h2 id="bottom">REPORTING ONLY</h2>
+  <h2 id="left">Manpower +<br>Non-Manpower Costs</h2>
+
+
+  <app-arrow   [hidden]="!colors.green" id="greenCanvas2"
+               [lines]="[createPoint(1, 40), createPoint(190, 40)]"
+               [color]="'#6ab04c'"
+               [direction]="'right'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.red" id="redCanvas"
+             [lines]="[createPoint(10, 1), createPoint(10, 120)]"
+             [color]="'#B53471'"
+             [direction]="'down'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.red" id="redCanvas2"
+             [lines]="[createPoint(10, 1), createPoint(10, 120)]"
+             [color]="'#B53471'"
+             [direction]="'down'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.yellow" id="yellowCanvas"
+             [lines]="[createPoint(10, 120 ), createPoint(10, 15)]"
+             [color]="'yellow'"
+             [direction]="'up'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.yellow" id="yellowCanvas2"
+             [lines]="[createPoint(10, 120), createPoint(10, 15)]"
+             [color]="'yellow'"
+             [direction]="'up'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.yellow" id="yellowCanvas3"
+             [lines]="[createPoint(10, 80), createPoint(10, 120)]"
+             [color]="'yellow'"
+             [direction]="'down'"
+  ></app-arrow>
+
+  <app-arrow   [hidden]="!colors.grey" id="grayCanvas3"
+               [lines]="[createPoint(1, 40), createPoint(50, 40)]"
+               [color]="'grey'"
+               [direction]="'right'"
+  ></app-arrow>
+
+
+</div>

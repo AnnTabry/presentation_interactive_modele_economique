@@ -1,0 +1,19 @@
+<div id="container">
+
+  <div class="titre">
+    <h1>TPE Cost Model Overview</h1>
+    <p>Apptio included in monthly allocation and month-end closing cycle / TPE costs by PM Products reflected in S/4.</p>
+  </div>
+
+  <img src="assets\img\tpe.jpg">
+  <br>
+  <br>
+
+  <div id="button">
+    <button *ngIf="year == 2018" class="blue" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')" routerLink="/year2018"></button>
+    <button *ngIf="year == 2019" class="blue" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')" routerLink="/year2019"></button>
+    <button *ngIf="year == 2020" class="blue" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')" routerLink="/year2020"></button>
+    <p>Go back</p>
+  </div>
+
+</div>

@@ -1,0 +1,25 @@
+<div id="container">
+
+
+  <div class="titre">
+    <h1>Option 1 - Business Platform Concept</h1>
+    <p>Business Platforms will be used as a driver-based mechanism for TPE to allocate Supply Chain-related costs to BUs, and for BUs to communicate future demand back to TPE for planning.</p>
+  </div>
+
+  <img src="assets\img\metrics_zoom.jpg">
+  <br>
+  <br>
+
+  <div id="button">
+    <!--osobny div button (zmienić id) wyświetlają się w zależności czy (start z) mp (chyba) czy z roku-->
+    <!--zmienna mp? boolan-->
+    <button *ngIf="year == 2018" class="blue2" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')" routerLink="/year2018"></button>
+    <button *ngIf="year == 2019" class="blue2" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')" routerLink="/year2019"></button>
+    <button *ngIf="year == 2020" class="blue2" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')" routerLink="/year2020"></button>
+    <p>Go back</p>
+  </div>
+
+
+
+
+</div>
